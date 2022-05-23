@@ -1,0 +1,131 @@
+:root {
+	--bg-gray-100: #b9b9b9;
+	--bg-opacity-dark: rgba(0, 0, 0, .75);
+	--bg-opacity-gray: rgba(0, 0, 0, .15);
+	--bg-opacity-white: rgba(255, 255, 255, .15);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+li {
+	list-style: none;
+}
+
+body > main {
+	width: 100%;
+	height: 100vh;
+	display: table;
+	overflow: hidden;
+  background-size: contain;
+  background-position: center center;
+  background-image: url('@assets/img/bg-main.gif');
+}
+
+.scale:active {
+	transform: scale(85%);
+}
+
+.press-start-2p {
+	font-family: 'Press Start 2P', sans-serif !important;
+}
+
+.shadow-opacity-gray {
+	box-shadow: -1px -1px 60px 0px rgb(110 104 104 / 75%) inset;
+	-webkit-box-shadow: -1px -1px 60px 0px rgb(110 104 104 / 75%) inset;
+	-moz-box-shadow: -1px -1px 60px 0px rgb(110 104 104 / 75%) inset;
+}
+
+.shadow-opacity-dark {
+	box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.45) inset;
+	-webkit-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.45) inset;
+	-moz-box-shadow: -1px 10px 39px 0px rgba(0,0,0,0.45) inset;
+}
+
+#pokemon-logo {
+	height: auto;
+	max-width: 100%;
+	object-fit: contain;
+}
+
+#settings {
+	top: 3em;
+	left: 3em;
+}
+
+#settings .item {
+	border-radius: 7px;
+	transition: background-color .3s linear;
+}
+
+#settings .item.active {
+	background-color: var(--bs-danger);
+}
+
+#settings .item.desactive {
+	background-color: var(--bs-gray-700);
+}
+
+#settings .pokemon-store {
+	border-radius: 12px;
+	color: var(--bg-gray-100);
+}
+
+.wrapper-seeker,
+#settings .pokemon-store {
+	background-color: var(--bg-opacity-dark);
+}
+
+#seeker {
+	outline: none;
+	font-size: .85em;
+	color: var(--bs-yellow);
+}
+
+#seeker:focus::placeholder {
+	color: transparent;
+}
+
+.wrapper-invoke {
+	height: 100vh
+}
+
+@media screen and (max-width: 1200px) {
+	#main-container {
+		margin-top: 12em;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	#main-container {
+		margin-top: 0;
+	}
+
+	#settings,
+	.play-background-music {
+		top: initial !important;
+		margin-top: 2em !important;
+		margin-right: 2em !important;
+		position: relative !important;
+	}
+
+	#settings {
+		left: initial !important;
+		margin-left: 2em !important;
+	}
+
+	.play-background-music {
+		display: flex !important;
+		right: initial !important;
+		margin-left: auto !important;
+	}
+}

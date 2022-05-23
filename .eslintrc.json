@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "no-tabs": "off",
+    "no-console": "off",
+    "arrow-body-style": "off",
+    "react/jsx-indent": "off",
+    "react/prop-types": "off",
+    "object-shorthand": "off",
+    "consistent-return": "off",
+    "import/no-unresolved": "off",
+    "object-curly-newline": "off",
+    "react/jsx-uses-react": "off",
+    "no-unused-expressions": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/state-in-constructor": "off",
+    "lines-between-class-members": "off",
+    "import/prefer-default-export": "off",
+    "react/destructuring-assignment": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "no-mixed-spaces-and-tabs": "warn",
+    "react/jsx-closing-tag-location": "warn",
+    "indent": "off",
+    "semi": ["warn", "never"],
+    "quotes": ["warn", "single"],
+    "max-len": ["error", { "code": 500 }],
+    "react/jsx-fragments": ["warn", "syntax"],
+    "linebreak-style": [0, "error", "window"],
+    "no-use-before-define": ["error", { "variables": false }],
+    "no-underscore-dangle": ["warn", { "allowAfterThis": true }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "react/default-props-match-prop-types": ["warn", { "allowRequiredDefaults": false }],
+    "keyword-spacing": [2, {"overrides": {
+        "catch": {"after": false}
+    }}],
+    "react/jsx-props-no-spreading": ["warn", {
+      "custom": "ignore"
+    }],
+    "import/extensions": [
+      "error",
+      "never",
+      {
+        "css": "always",
+        "gif": "always",
+        "mp3": "always",
+        "wav": "always",
+        "webp": "always",
+        "json": "always",
+        "Reducer": "always",
+        "Context": "always"
+      }
+   ]
+  }
+}

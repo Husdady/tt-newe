@@ -1,0 +1,24 @@
+{
+  "pokemons": [],
+  "myPokemons": [],
+  "favoritePokemons": [],
+  "isInvoking": true,
+  "activeTab": null,
+  "searchValue": "",
+  "pagination": {
+    "count": 0,
+    "limit": 10,
+    "offset": 10,
+    "next": null,
+    "previous": null,
+    "currentPage": 1,
+    "pokemonsPerPage": 40
+  },
+  "shop": {
+    "items": [],
+    "timeForReloadItems": null
+  },
+  "backpack": {
+    "items": []
+  }
+}

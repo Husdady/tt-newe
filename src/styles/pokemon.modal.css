@@ -1,0 +1,81 @@
+.animate__animated.animate__fadeIn {
+  --animate-duration: 1.25s;
+}
+
+.pokemon-modal {
+  z-index: 9999999999;
+  background-color: rgba(0, 0, 0, .85);
+}
+
+.pokemon-modal > .content img {
+  width: 100%;
+}
+
+.pokemon-modal > .content .default-pokeball {
+  width: 35%;
+  min-width: 250px;
+  max-width: 600px;
+}
+
+.pokemon-modal > .content .default-pokeball:hover {
+  cursor: pointer;
+}
+
+.pokemon-modal > .content .catched-pokeball {
+  width: 30%;
+  min-width: 300px;
+  max-width: 585px;
+}
+
+.pokemon-modal > .content .opened-pokeball {
+  width: 35%;
+  min-width: 240px;
+  max-width: 590px;
+}
+
+.pokemon-modal > .content .pk-catched {
+  width: 50%;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.pokemon-modal > .content .message {
+  line-height: 1.5;
+}
+
+.pokemon-modal > .content .default-message {
+  margin-top: -3.5%;
+  margin-bottom: 0; 
+}
+
+.pokemon-modal > .content .message-catched-pokemon {
+  line-height: 2;
+}
+
+.pokemon-modal > .content .message-not-catched-pokemon {
+  margin: -5px 0 0;
+  width: 100%;
+}
+
+.pokemon-modal > .content #pokemon-already-catched {
+  width: 80%;
+}
+
+#close-modal {
+  top: 5%;
+  right: 5%;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .pokemon-modal {
+    padding-bottom: 5em;
+  }
+
+  #close-modal {
+    display: block;
+    margin-left: auto;
+    margin-right: 1em;
+    position: relative !important;
+  }
+}

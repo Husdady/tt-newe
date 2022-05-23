@@ -1,0 +1,112 @@
+:root {
+  --bs-normal: #A8A77A;
+  --bs-fire: #EE8130;
+  --bs-water: #6390F0;
+  --bs-electric: #F7D02C;
+  --bs-grass: #7AC74C;
+  --bs-ice: #96D9D6;
+  --bs-fighting: #C22E28;
+  --bs-poison: #A33EA1;
+  --bs-ground: #E2BF65;
+  --bs-flying: #A98FF3;
+  --bs-psychic: #F95587;
+  --bs-bug: #A6B91A;
+  --bs-rock: #B6A136;
+  --bs-ghost: #735797;
+  --bs-dragon: #6F35FC;
+  --bs-dark: #705746;
+  --bs-steel: #B7B7CE;
+  --bs-fairy: #D685AD;
+}
+
+.type.ground,
+.type.electric {
+  color: #000;
+}
+
+.pokemons .pokemon {
+  border-radius: 7px;
+  color: var(--bg-gray-100);
+  background-color: rgba(0, 0, 0, .85);
+  box-shadow: 0 2px 10px 6px rgba(0, 0, 0, .25);
+}
+
+.pokemons .pokemon .pk-img {
+  height: 200px;
+}
+
+.pokemons .pokemon > .order {
+  top: 1em;
+  left: 1em;
+}
+
+.pokemons .pokemon > .types > .type {
+  font-size: .75em;
+  padding: 10px 30px;
+  color: var(--bs-white);
+}
+
+.pokemons .pokemon .tabs .tab-list {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.pokemons .pokemon .tabs .tab-list .tab-item {
+  margin: 10px 20px;
+}
+
+.pokemons .pokemon .tabs .tab-list .tab-item:hover {
+  cursor: pointer;
+}
+
+.pokemons .pokemon .tabs .tab-list .tab-item.active {
+  opacity: 1;
+  padding-bottom: 6px;
+  border-bottom: 4px solid var(--bs-yellow);
+}
+
+.pokemons .pokemon .heart .fav-icon-border,
+.pokemons .pokemon .tabs .tab-list .tab-item.desactive {
+  opacity: .3;
+}
+
+.pokemons .pokemon .tabs .tab-list .tab-item .pk-tab-img {
+  width: 50px;
+  height: 50px;
+}
+
+.pokemons .pokemon .tabs .tab-content .moves,
+.pokemons .pokemon .tabs .tab-content .extra-information {
+  overflow-y: auto;
+}
+
+.pokemons .pokemon .tabs .tab-content .statistics,
+.pokemons .pokemon .tabs .tab-content .wrapper-moves,
+.pokemons .pokemon .tabs .tab-content .extra-information {
+  max-height: 350px;
+  overflow-x: hidden;
+}
+
+.pokemons .pokemon .tabs .tab-content .statistics::-webkit-scrollbar,
+.pokemons .pokemon .tabs .tab-content .wrapper-moves::-webkit-scrollbar,
+.pokemons .pokemon .tabs .tab-content .extra-information::-webkit-scrollbar {
+  width: 4px;
+}
+
+.pokemons .pokemon .tabs .tab-content .wrapper-moves::-webkit-scrollbar-track,
+.pokemons .pokemon .tabs .tab-content .statistics::-webkit-scrollbar-track,
+.pokemons .pokemon .tabs .tab-content .extra-information::-webkit-scrollbar {
+  background-color: var(--bg-gray-100);
+}
+
+.pokemons .pokemon .tabs .tab-content .wrapper-moves::-webkit-scrollbar-thumb,
+.pokemons .pokemon .tabs .tab-content .statistics::-webkit-scrollbar-thumb,
+.pokemons .pokemon .tabs .tab-content .extra-information::-webkit-scrollbar-thumb {
+  background-color: var(--bg-opacity-dark);
+}
+
+.pokemons .pokemon .tabs .tab-content .moves .move {
+  font-size: .65em;
+}
